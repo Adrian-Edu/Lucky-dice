@@ -236,17 +236,24 @@ main {
 
 @media (max-width: 480px) {
   main {
-    width: 60rem;
+    width: 30rem;
+    height: 60rem;
   }
   .btn {
-    font-size: 0.8rem;
-    padding: 0.7rem 2.5rem;
+    font-size: 0.2rem;
+    padding: 0.2rem 0.2rem;
+    font-size: 10px;
+    text-align: center;
   }
   .btn::first-letter {
     font-size: 1.4rem;
   }
   .name {
-    font-size: 2rem;
+    font-size: 1rem;
+    font-weight: 900;
+    margin-top: 2rem;
+    word-wrap: break-word;
+    width: 100%;
   }
   .score {
     font-size: 2rem;
@@ -257,5 +264,29 @@ main {
   }
   .player {
     padding: 2rem;
+  }
+  .btn--instructions {
+    top: 4rem;
+  }
+  .btn--new {
+    top: 8rem;
+  }
+  .btn--roll {
+    top: 25rem;
+  }
+  .btn--hold {
+    top: 28rem;
+  }
+  .dice {
+    position: absolute;
+    left: 50%;
+    top: 15rem;
+    transform: translateX(-50%);
+    height: 8rem;
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+  }
+  .current {
+    width: 100%;
+    height: 20%;
   }
 }
