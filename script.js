@@ -18,17 +18,14 @@ const buttonCloseModal = document.querySelector('.close-modal');
 let scoreP1 = 0;
 let scoreP2 = 0;
 
-// cand dam click sa apara zarul
 selectDice.addEventListener('click', function () {
   zar.classList.remove('hidden');
 });
 
-// asa schimbam imaginea
 function changeDiceImage(image) {
   zar.src = image;
 }
 
-// count score
 function countCurrentScore(number) {
   if (playerActive1.classList.contains('player--active')) {
     currentScore1.textContent = scoreP1 += number;
@@ -36,8 +33,6 @@ function countCurrentScore(number) {
     currentScore2.textContent = scoreP2 += number;
   }
 }
-
-// dam cu zarul
 
 function rollDice() {
   const dice = Math.trunc(Math.random() * 6) + 1;
@@ -47,32 +42,20 @@ function rollDice() {
     switchPlayersOne();
     currentScore1.textContent = 0;
     currentScore2.textContent = 0;
-  } else if (dice === 2) {
-    changeDiceImage('dice-2.png');
-  } else if (dice === 3) {
-    changeDiceImage('dice-3.png');
-  } else if (dice === 4) {
-    changeDiceImage('dice-4.png');
-  } else if (dice === 5) {
-    changeDiceImage('dice-5.png');
-  } else if (dice === 6) {
-    changeDiceImage('dice-6.png');
+  } else {
+    changeDiceImage(`dice-${dice}.png`);
   }
 }
 
-// cand dam click pe zar generam un numar random si schimbam imaginea
 selectDice.addEventListener('click', rollDice);
 
-// schimba jucatorul
 function switchPlayers() {
   if (playerActive1.classList.contains('player--active')) {
     playerActive2.classList.add('player--active');
     playerActive1.classList.remove('player--active');
-
     scorePlayer1.textContent =
       Number(scorePlayer1.textContent) + Number(currentScore1.textContent);
-    // console.log('player 2');
-    if (scorePlayer1.textContent > 120) {
+    if (scorePlayer1.textContent > 100) {
       playerActive1.classList.add('player--winner');
       player1.classList.add('player--winner.name');
       selectDice.disabled = true;
@@ -85,19 +68,17 @@ function switchPlayers() {
     playerActive1.classList.add('player--active');
     scorePlayer2.textContent =
       Number(scorePlayer2.textContent) + Number(currentScore2.textContent);
-    if (scorePlayer2.textContent > 120) {
+    if (scorePlayer2.textContent > 100) {
       playerActive2.classList.add('player--winner') &&
         player2.classList.add('player--winner.name');
       selectDice.disabled = true;
       changePlayer.disabled = true;
     }
-    //   console.log('player 1');
     currentScore2.textContent = 0;
     scoreP2 = 0;
   }
 }
 
-// schimba jucatorul
 function switchPlayersOne() {
   if (playerActive1.classList.contains('player--active')) {
     playerActive2.classList.add('player--active');
@@ -111,10 +92,9 @@ function switchPlayersOne() {
     scoreP2 = 0;
   }
 }
-// cand dam click pe hold schimbam jucatorii
+
 changePlayer.addEventListener('click', switchPlayers);
 
-//cand dam click pe new game zarul dispare
 newGame.addEventListener('click', function () {
   zar.classList.add('hidden');
   scorePlayer1.textContent = 0;
@@ -128,8 +108,6 @@ newGame.addEventListener('click', function () {
   selectDice.disabled = false;
   changePlayer.disabled = false;
 });
-
-//modal
 
 const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
