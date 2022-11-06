@@ -12,6 +12,8 @@ const scorePlayer1 = document.querySelector('#score--0');
 const scorePlayer2 = document.querySelector('#score--1');
 const player1 = document.querySelector('#name--0');
 const player2 = document.querySelector('#name--1');
+const buttonOpenModal = document.querySelectorAll('.show-modal');
+const buttonCloseModal = document.querySelector('.close-modal');
 
 let scoreP1 = 0;
 let scoreP2 = 0;
@@ -125,4 +127,32 @@ newGame.addEventListener('click', function () {
   scoreP2 = 0;
   selectDice.disabled = false;
   changePlayer.disabled = false;
+});
+
+//modal
+
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const close = document.querySelector('.close-modal');
+
+const openModal = function () {
+  modal.classList.remove('hidden');
+  overlay.classList.remove('hidden');
+};
+
+const closeModal = function () {
+  modal.classList.add('hidden');
+  overlay.classList.add('hidden');
+};
+
+for (let i = 0; i < buttonOpenModal.length; i++) {
+  buttonOpenModal[i].addEventListener('click', openModal);
+  buttonCloseModal.addEventListener('click', closeModal);
+  overlay.addEventListener('click', closeModal);
+}
+
+window.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+    closeModal();
+  }
 });
