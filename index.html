@@ -12,28 +12,38 @@
     <div class="grid-container">
 
         <div class="item1 player player--0 player--active">
-          <h2 class="name" id="name--0">Player 1 Total score</h2>
+          <div class="top">
+          <h2 class="name" id="name--0">Player 1 <br/> Total score</h2>
+         </div>
           <p class="score" id="score--0">0</p>
-          <div class="current">
+          <div class="current bottom-r-l">
             <p class="current-label">Current score</p>
             <p class="current-score" id="current--0">0</p>
           </div>
         </div>
 
         <div class="item2">
-        <img src="dice-5.png" alt="Playing dice" class="dice hidden" />
-        <button class="btn btn--new">🔄 New game</button>
-        <button class="btn btn--instructions show-modal">
+        <div class="top"> 
+        <button class="btn btn--new ">🔄 New game</button>
+        <button class="btn btn--instructions show-modal ">
           🗺️ Instructions
         </button>
-        <button class="btn btn--roll">🎲 Roll dice</button>
-        <button class="btn btn--hold">📥 Hold</button>
+        </div> 
+        <div>
+          <img src="dice-5.png" alt="Playing dice" class="dice hidden" />
+       </div>
+       <div class="bottom">
+          <button class="btn btn--roll ">🎲 Roll dice</button>
+        <button class="btn btn--hold ">📥 Hold</button>
+        </div>
         </div>
 
            <div class="item3 player player--1">
-          <h2 class="name" id="name--1">Player 2 total score</h2>
+            <div class="top">
+          <h2 class="name" id="name--1">Player 2 <br/> Total score</h2>
+         </div>
           <p class="score" id="score--1">0</p>
-          <div class="current">
+          <div class="current bottom-r-l">
             <p class="current-label">Current score</p>
             <p class="current-score" id="current--1">0</p>
           </div>
