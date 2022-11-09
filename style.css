@@ -318,24 +318,27 @@ body {
     margin-bottom: 150px;
   }
   .name {
-    font-size: 10px;
+    font-size: 8px;
   }
   .current-label {
-    font-size: 10px;
+    font-size: 8px;
   }
   .current-score {
-    font-size: 10px;
+    font-size: 8px;
   }
   .score {
-    font-size: 10px;
+    font-size: 8px;
     margin: 30px 0;
   }
   .btn {
-    font-size: 10px;
+    font-size: 8px;
     padding: 5px;
   }
   .dice {
     height: 2rem;
     box-shadow: 0 2em 5em rgba(0, 0, 0, 0.2);
+  }
+  .current {
+    padding: 0 0.6em 0 0.6em;
   }
 }
