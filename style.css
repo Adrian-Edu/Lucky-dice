@@ -270,11 +270,31 @@ body {
     top: 35%;
     left: 34%;
   }
+  .modal > h1 {
+    font-size: 1.5em;
+    text-align: center;
+  }
+  .modal > p {
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 
 @media screen and (max-width: 320px) {
   .modal {
-    top: 32%;
+    top: 20%;
     left: 34%;
+  }
+  .modal > h1 {
+    font-size: 1em;
+    text-align: center;
+  }
+  .modal > p {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
 }
