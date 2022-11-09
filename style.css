@@ -288,31 +288,29 @@ body {
     margin-bottom: 150px;
   }
   .name {
-    font-size: 10px;
+    font-size: 16px;
   }
   .current-label {
-    font-size: 10px;
+    font-size: 16px;
   }
   .current-score {
-    font-size: 10px;
+    font-size: 16px;
   }
   .score {
-    font-size: 10px;
+    font-size: 16px;
     margin: 30px 0;
   }
   .btn {
-    font-size: 10px;
+    font-size: 12px;
     padding: 5px;
   }
   .dice {
     height: 2rem;
     box-shadow: 0 2em 5em rgba(0, 0, 0, 0.2);
   }
-  .current {
-    padding: 0 0.3em 0 0.3em;
-  }
+
   .grid-container {
     height: 60vh;
-    margin-top: 130px;
+    margin-top: 110px;
   }
 }
