@@ -271,29 +271,43 @@ body {
     left: 34%;
   }
   .modal > h1 {
-    font-size: 1.5em;
+    font-size: 1em;
     text-align: center;
+    margin-top: 15px;
   }
   .modal > p {
-    font-size: 17px;
+    font-size: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
+  .modal > button {
+    font-size: 25px;
+    margin-bottom: 150px;
+  }
   .name {
-    font-size: 20px;
+    font-size: 6px;
   }
   .current-label {
-    font-size: 20px;
+    font-size: 6px;
   }
   .current-score {
-    font-size: 20px;
+    font-size: 6px;
   }
   .score {
-    font-size: 20px;
+    font-size: 6px;
+    margin: 30px 0;
   }
   .btn {
-    font-size: 20px;
+    font-size: 6px;
+    padding: 5px;
+  }
+  .dice {
+    height: 2rem;
+    box-shadow: 0 2em 5em rgba(0, 0, 0, 0.2);
+  }
+  .current {
+    padding: 0 0.1em 0 0.1em;
   }
 }
 
