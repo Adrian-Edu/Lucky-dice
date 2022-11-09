@@ -237,30 +237,44 @@ body {
   font-size: 3em;
 }
 
-@media screen and (max-width: 1992px) {
+@media screen and (max-width: 2560px) {
   .modal {
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 35%;
   }
 }
 
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 1440px) {
   .modal {
-    top: 50%;
+    top: 30%;
     left: 34%;
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1024px) {
   .modal {
-    top: 50%;
+    top: 34%;
+    left: 34%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .modal {
+    top: 34%;
     left: 34%;
   }
 }
 
 @media screen and (max-width: 600px) {
   .modal {
-    top: 50%;
+    top: 35%;
+    left: 34%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .modal {
+    top: 32%;
     left: 34%;
   }
 }
