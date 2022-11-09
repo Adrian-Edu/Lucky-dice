@@ -268,7 +268,7 @@ body {
 
 @media screen and (max-width: 600px) {
   .modal {
-    top: 34%;
+    top: 47%;
     left: 50%;
     width: 70%;
   }
@@ -313,5 +313,6 @@ body {
   }
   .grid-container {
     height: 50vh;
+    margin-top: 150px;
   }
 }
