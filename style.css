@@ -267,8 +267,9 @@ body {
 
 @media screen and (max-width: 600px) {
   .modal {
-    top: 35%;
-    left: 34%;
+    top: 30%;
+    left: 50%;
+    width: 70%;
   }
   .modal > h1 {
     font-size: 1em;
