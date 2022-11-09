@@ -55,7 +55,7 @@ function switchPlayers() {
     playerActive1.classList.remove('player--active');
     scorePlayer1.textContent =
       Number(scorePlayer1.textContent) + Number(currentScore1.textContent);
-    if (scorePlayer1.textContent > 20) {
+    if (scorePlayer1.textContent > 100) {
       playerActive1.classList.add('player--winner');
       player1.classList.add('player--winner.name');
       selectDice.disabled = true;
@@ -68,7 +68,7 @@ function switchPlayers() {
     playerActive1.classList.add('player--active');
     scorePlayer2.textContent =
       Number(scorePlayer2.textContent) + Number(currentScore2.textContent);
-    if (scorePlayer2.textContent > 20) {
+    if (scorePlayer2.textContent > 100) {
       playerActive2.classList.add('player--winner') &&
         player2.classList.add('player--winner.name');
       selectDice.disabled = true;
