@@ -17,7 +17,6 @@ body {
 
 .grid-container > div {
   text-align: center;
-  font-size: 30px;
   box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
 }
 
@@ -26,8 +25,8 @@ body {
   grid-column-end: 6;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
 }
 
 .item2 {
@@ -36,8 +35,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
   background-image: linear-gradient(#ffff19, #f80, #ffff19);
+  justify-content: space-around;
 }
 
 .top {
@@ -153,7 +152,7 @@ body {
   font-weight: 300;
   margin-bottom: 1rem;
   text-align: center;
-  margin: -0.3em 0.5em 0 0.5em;
+  margin: 0.5em;
 }
 
 .score {
@@ -167,7 +166,7 @@ body {
   opacity: 0.8;
   border-radius: 9px;
   color: #fff;
-  width: 50%;
+  width: 75%;
   text-align: center;
   transition: all 0.75s;
   padding: 0 0.8em 0 0.8em;
@@ -226,4 +225,8 @@ body {
 
 .player--winner {
   background-color: #2f2f2f;
+}
+
+.current-score {
+  font-size: 2em;
 }
