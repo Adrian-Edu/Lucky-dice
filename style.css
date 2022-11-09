@@ -280,6 +280,21 @@ body {
     flex-direction: column;
     justify-content: space-around;
   }
+  .name {
+    font-size: 20px;
+  }
+  .current-label {
+    font-size: 20px;
+  }
+  .current-score {
+    font-size: 20px;
+  }
+  .score {
+    font-size: 20px;
+  }
+  .btn {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -301,5 +316,26 @@ body {
   .modal > button {
     font-size: 25px;
     margin-bottom: 150px;
+  }
+  .name {
+    font-size: 10px;
+  }
+  .current-label {
+    font-size: 10px;
+  }
+  .current-score {
+    font-size: 10px;
+  }
+  .score {
+    font-size: 10px;
+    margin: 30px 0;
+  }
+  .btn {
+    font-size: 10px;
+    padding: 5px;
+  }
+  .dice {
+    height: 2rem;
+    box-shadow: 0 2em 5em rgba(0, 0, 0, 0.2);
   }
 }
